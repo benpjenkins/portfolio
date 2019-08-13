@@ -7,6 +7,9 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 `
 const Links = styled.div`
   padding: 1.8rem 1.0875rem;
@@ -22,8 +25,11 @@ const StyledLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      paddingRight: "1.3rem",
+      paddingLeft: "1.3rem",
       background: "#24292E",
       marginBottom: `1.45rem`,
+      width: `100%`
     }}
   >
     <Flex>
