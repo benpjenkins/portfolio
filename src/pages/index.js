@@ -18,6 +18,7 @@ const Text = styled.h1`
   color: white;
   font-size: 5em;
   padding: 1.5em;
+  font-family: Oswald;
   @media (max-width: 920px) {
     font-size: 3em;
   }
