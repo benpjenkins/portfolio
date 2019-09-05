@@ -10,7 +10,6 @@ class helmet extends React.Component {
           <meta name="description" content="Free Web tutorials"></meta>
           <title>Ben Jenkins</title>
           <link rel="canonical" href="https://www.benjenkins.dev/" />
-
         </Helmet>
       </div>
     )

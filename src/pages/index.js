@@ -4,6 +4,7 @@ import LandingLayout from "../components/landingLayout"
 import styled from 'styled-components'
 
 
+
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #f92300;
@@ -18,7 +19,7 @@ const Text = styled.h1`
   color: white;
   font-size: 5em;
   padding: 1.5em;
-  font-family: Oswald;
+  font-family: 'Oswald', serif;
   @media (max-width: 920px) {
     font-size: 3em;
   }
