@@ -11,9 +11,14 @@ module.exports = {
         fonts: [
           {
             family: `Oswald`,
-          }
-        ]
-        }
+            subsets: [`latin`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
