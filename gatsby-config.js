@@ -5,6 +5,16 @@ module.exports = {
     author: `Ben Jenkins`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Oswald`,
+          }
+        ]
+        }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,8 +30,10 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
