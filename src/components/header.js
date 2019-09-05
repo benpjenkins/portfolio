@@ -16,7 +16,7 @@ const Links = styled.div`
 `
 const StyledLink = styled(Link)`
   padding: 1em;
-  color: white;
+  color: black;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -27,9 +27,9 @@ const Header = ({ siteTitle }) => (
     style={{
       paddingRight: "1.3rem",
       paddingLeft: "1.3rem",
-      background: "#24292E",
       marginBottom: `1.45rem`,
-      width: `100%`
+      width: `100%`,
+      fontFamily: "Oswald",
     }}
   >
     <Flex>
@@ -44,8 +44,9 @@ const Header = ({ siteTitle }) => (
           <Link
             to="/"
             style={{
-              color: `white`,
+              color: `black`,
               textDecoration: `none`,
+              fontFamily: "Oswald",
             }}
           >
             {siteTitle}
@@ -53,8 +54,9 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <Links>
-        <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="about">About</StyledLink>
         <StyledLink to="portfolio">Portfolio</StyledLink>
+        <StyledLink to="blog">Blog</StyledLink>
       </Links>
     </Flex>
   </header>
