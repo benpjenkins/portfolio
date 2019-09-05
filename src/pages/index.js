@@ -16,7 +16,6 @@ const Background = styled.div`
 `
 const Text = styled.h1`
   color: white;
-  font-family: "Oswald";
   font-size: 5em;
   padding: 1.5em;
   @media (max-width: 920px) {
