@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 // import Header from "../components/header"
 
-import Layout from "../components/layout"
+import MainLayout from "../components/mainLayout"
 import SEO from "../components/seo"
 const About = () => (
-  <Layout>
+  <MainLayout>
     <SEO title="About" />
     <h1>About Me</h1>
     <p>
@@ -39,7 +39,7 @@ const About = () => (
       <a href={"mailto: ben@benjenkins.dev"}>Email</a> or follow me on{" "}
       <a href={"https://twitter.com/benjenkinsdev"}>Twitter</a>.
     </p>
-  </Layout>
+  </MainLayout>
 )
 
 export default About

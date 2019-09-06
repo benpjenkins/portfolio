@@ -1,14 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import LandingLayout from "../components/landingLayout"
+import Layout from "../components/layout"
 import styled from 'styled-components'
+import SEO from '../components/seo'
 
 
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #f92300;
-`
 const Background = styled.div`
   background: #f92300;
   width: 100vw;
@@ -31,11 +27,14 @@ const Text = styled.h1`
 
 export default ({ data }) => {
   return (
-    <LandingLayout>
+    <div>
+    <SEO title="Home"/>
+    <Layout>
       <Background>
         <Text>Ben Jenkins is a software engineer from Chicago, IL</Text>
       </Background>
-    </LandingLayout>
+    </Layout>
+    </div>
   )
 }
 

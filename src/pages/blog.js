@@ -1,7 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import MainLayout from "../components/mainLayout"
 import styled from "styled-components"
+import SEO from "../components/seo"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -10,7 +11,8 @@ const StyledLink = styled(Link)`
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <MainLayout>
+      <SEO title="Blog" />
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
@@ -23,7 +25,7 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-    </Layout>
+    </MainLayout>
   )
 }
 

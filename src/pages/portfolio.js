@@ -4,10 +4,10 @@ import React from "react"
 import reactfx from '../images/reactfx.png'
 import gracefulShoveler from '../images/gracefulShoveler.png'
 
-import Layout from "../components/layout"
+import MainLayout from "../components/mainLayout"
 import SEO from "../components/seo"
 const Portfolio = () => (
-  <Layout>
+  <MainLayout>
     <SEO title="Portfolio" />
     <h2>React FX - Sole Developer</h2>
     <h5>Realtime audio processing emulating electric guitar effects.</h5>
@@ -39,7 +39,7 @@ const Portfolio = () => (
       </li>
       <li>Writing full stack tests using Mocha, Chai, and Enzyme.</li>
     </ul>
-  </Layout>
+  </MainLayout>
 )
 
 export default Portfolio
