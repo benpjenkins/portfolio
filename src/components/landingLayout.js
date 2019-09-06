@@ -28,7 +28,7 @@ const LandingLayout = ({ children }) => {
   return (
     <>
       <Container>
-        <Header siteTitle="Ben Jenkins" />
+        <Header siteTitle={"Ben Jenkins"} />
         <Children>
           <main>{children}</main>
         </Children>
