@@ -6,10 +6,10 @@ import SEO from '../components/seo'
 
 
 const Background = styled.div`
-  background: #f92300;
+  background: #667ecc;
   width: 100vw;
   height: 85vh;
-  text-align: center
+  text-align: center;
 `
 const Text = styled.h1`
   color: white;
