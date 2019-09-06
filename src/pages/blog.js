@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #f92300;
+
 `
 
 export default ({ data }) => {
@@ -17,7 +17,7 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <StyledLink to={node.fields.slug}>
-              <h3>{node.frontmatter.title}</h3>
+              <h2>{node.frontmatter.title}</h2>
             </StyledLink>
             {node.frontmatter.date}
             <p>{node.frontmatter.description}</p>
