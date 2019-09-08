@@ -16,12 +16,12 @@ const Text = styled.h1`
   font-size: 5em;
   padding: 1.5em;
   font-family: 'Oswald', serif;
-  /* @media (max-width: 920px) {
+   @media (max-width: 920px) {
     font-size: 3em;
   }
   @media (max-width: 430px) {
     font-size: 2.5em;
-  } */
+  }
 `
 
 
