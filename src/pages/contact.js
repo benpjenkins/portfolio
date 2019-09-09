@@ -46,12 +46,12 @@ const Flex = styled.div`
   display: flex;
   width: 300px;
   align-self: center;
-  @media (min-width: 600px) {
+  /* @media (min-width: 600px) {
     width: 400px;
   }
   @media (min-width: 1000px) {
     width: 600px;
-  }
+  } */
 `
 const StyledInput = styled(Input)`
   border-radius: 15px;
