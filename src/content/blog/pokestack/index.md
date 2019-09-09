@@ -44,7 +44,7 @@ client.login("token")
 This example demonstrates several event in which a bot might perform an action.
 We can see that there are two events: "ready" and "message". There are numerous
 events and you can have your bot take all sorts of actions depending on what events
-are occuring on any server it is invited to.
+are occurring on any server it is invited to.
 
 Events are important but there is one event that needs special attention drawn to
 it because it is typically where most of a bot's functionality lies. The message
@@ -86,7 +86,7 @@ map each command in that folder to the bot. Without much effort we have set our
 bot up with the ability to add any number of commands. That's actually kind of
 awesome.
 
-So what did I find frusterating about making a Discord bot? Was it making
+So what did I find frustrating about making a Discord bot? Was it making
 random Pokémon appear in the server and be able to be caught by users? No, we simply
 use the ready event and a simple API call.
 
@@ -115,8 +115,8 @@ const getRandomPoke = async function() {
 Put that all within the ready event and set an interval on it and Pokémon will start
 appearing. Can you guess why the server is hard coded with a string of a bunch of numbers?
 I'm not a Discord power user and I honestly don't know if someone could invite this bot
-to a different server. I hardcoded the server that I am demoing the project on to
-prevent this bot from ever emiting this message in other servers and driving it's
+to a different server. I hard-coded the server that I am demoing the project on to
+prevent this bot from ever emitting this message in other servers and driving it's
 members crazy.
 
 What about giving the bot the ability to join a voice channel and play the theme
@@ -145,8 +145,8 @@ exports.run = (bot, message, args) => {
 
 Here comes the ytdl node module to save the day. I knew that I wanted the bot to
 be able to play this specific song but I also dreamed about one day making it able to
-play any song that someone could find a youtube video for. For brevity's sake
-(I know, too late) I ommited some error handling here but this is basically all it
+play any song that someone could find a Youtube video for. For brevity's sake
+(I know, too late) I omitted some error handling here but this is basically all it
 takes to make a bot hop into a voice channel and start making some music. YTDL
 could theoretically download the audio from any Youtube video (although right now
 it is hard coded for just one) and once it has downloaded that file it will

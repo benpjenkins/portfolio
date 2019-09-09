@@ -36,7 +36,7 @@ and persistence do pay off in this program but you also need to give yourself a 
 I would have lost my mind if I didn't watch an episode of a Netflix show here and
 there or taken a break to play tug of war with my dog.
 
-I could write a book about all the things I leared in the past six weeks, both
+I could write a book about all the things I learned in the past six weeks, both
 technical and not, but I don't want to bore everyone with that. Reach out to me
 on twitter @benjenkinsdev if you have question about what this experience is like
 and I would be happy to offer an help I can!
