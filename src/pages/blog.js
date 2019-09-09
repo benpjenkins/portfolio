@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-
 `
 
 export default ({ data }) => {
