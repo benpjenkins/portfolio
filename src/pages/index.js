@@ -55,7 +55,7 @@ export default ({ data }) => {
     <SEO title="Home"/>
     <Layout>
       <Background>
-        <ProfilePic src={Ben}></ProfilePic>
+        <ProfilePic src={Ben} alt="Ben's headshot"></ProfilePic>
         <Text>Ben Jenkins is a software engineer from Chicago, IL</Text>
       </Background>
     </Layout>
