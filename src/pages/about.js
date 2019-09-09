@@ -25,8 +25,10 @@ const About = () => (
       further enrich their lives.
     </p>
     <p>
-      I am currently studying Fullstack Software Engineering at Fullstack
-      Academy in Chicago. When I am done with this program in September I will
+      During the summer of 2019 I studied fullstack software engineering at Fullstack
+      Academy in Chicago. Upon completing my studies I was chosen for their teaching fellowship, a competitive position where graduates spend another 13 weeks at Fullstack Academy teaching and mentoring students.
+
+      When I complete the teaching fellowship in December I will
       be seeking employment in the area as a Software Engineer. I am open to any
       opportunities but would be particularly excited to be part of a team
       focused on social good.
