@@ -75,6 +75,7 @@ const contact = () => {
       <SEO title="Contact" />
       <div>
         <Form method="post" netlify-honeypot="bot-field" data-netlify="true">
+          <input type="hidden" name="bot-field" />
           <label>
             Name
             <br />
