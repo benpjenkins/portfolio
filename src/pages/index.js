@@ -19,9 +19,12 @@ const Text = styled.h1`
   font-size: 4em;
   padding: 1em;
   font-family: 'Oswald', serif;
-  flex: 1;
+  flex: 2;
    @media (max-width: 800px) {
     font-size: 2.5em;
+  }
+  @media (min-width: 800px) {
+    margin-top: 7%;
   }
   @media (max-width: 430px) {
     font-size: 2em;
@@ -30,7 +33,7 @@ const Text = styled.h1`
 
 const ProfilePic = styled.img`
   border-radius: 50%;
-  width: 45%;
+  width: 40%;
   height: auto;
   margin-top: 10%;
   flex: 1;
