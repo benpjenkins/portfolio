@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-// import Header from "../components/header"
-
 import MainLayout from "../components/mainLayout"
 import SEO from "../components/seo"
+
 const About = () => (
   <MainLayout>
     <SEO title="About" />
