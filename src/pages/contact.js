@@ -68,11 +68,15 @@ const StyledInput = styled(Input)`
     outline: 0;
   }
 `
+const P = styled.h3`
+  text-align: center;
+`
 
 const contact = () => {
   return (
     <MainLayout>
       <SEO title="Contact" />
+      <P>Have questions?  Interested in working together?  Feel free to reach out!</P>
       <div>
         <Form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
           <input type="hidden" name="bot-field" />

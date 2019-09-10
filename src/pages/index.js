@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Ben from '../images/ben.jpeg'
 
-
 const Background = styled.div`
   background: #667ecc;
   width: 100vw;
