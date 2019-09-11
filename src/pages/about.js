@@ -8,7 +8,7 @@ const About = () => (
     <h1>About Me</h1>
     <p>
       I’m Ben Jenkins, a Fullstack Software Engineer with a passion for helping
-      other. I have spent my career thus far working as a youth pastor and
+      others. I have spent my career thus far working as a youth pastor and
       hospital chaplain and also have experience teaching basic coding skills to
       kindergarten through second grade students.
     </p>
