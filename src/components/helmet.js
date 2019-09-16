@@ -7,7 +7,7 @@ class helmet extends React.Component {
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <meta name="description" content="Free Web tutorials"></meta>
+          <meta name="description" content="Ben Jenkins Portfolio"></meta>
           <title>Ben Jenkins</title>
           <link rel="canonical" href="https://www.benjenkins.dev/" />
         </Helmet>
