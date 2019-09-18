@@ -7,7 +7,7 @@ import Ben from '../images/ben.jpeg'
 const Background = styled.div`
   background: #667ecc;
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   text-align: center;
   @media (min-width: 800px) {
     display:flex
@@ -34,7 +34,7 @@ const ProfilePic = styled.img`
   border-radius: 50%;
   width: 40%;
   height: auto;
-  margin-top: 10%;
+  padding-top: 20px;
   flex: 1;
 
   @media (max-width: 430px) {
