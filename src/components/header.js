@@ -7,7 +7,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  @media (max-width: 400px) {
+  @media (max-width: 530px) {
     flex-direction: column;
   }
 `
