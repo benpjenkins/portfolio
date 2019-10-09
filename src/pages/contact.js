@@ -1,9 +1,9 @@
-import React from 'react'
-import MainLayout from '../components/mainLayout'
+import React from "react"
+import MainLayout from "../components/mainLayout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
-const Form = styled.form `
+const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin-top: 10%;
@@ -27,19 +27,39 @@ const TextArea = styled.textarea`
     width: 600px;
   }
 `
-const Button = styled.button`
-  border-radius: 15px;
+// const Button = styled.button`
+//   border-radius: 15px;
+//   color: white;
+//   background-color: #667ecc;
+//   padding: 1em;
+//   text-align: center;
+//   margin: 20px;
+//   flex: 1;
+//   &:hover {
+//     box-shadow: 0px 0px 3px black;
+//   }
+//   &:focus {
+//     outline: 0;
+//   }
+// `
+
+const Submit = styled.button`
+  font-family: apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 7rem;
+  height: 3.5rem;
+  background: #667ecc;
   color: white;
-  background-color: #667ecc;
-  padding: 1em;
-  text-align: center;
-  margin: 20px;
-  flex: 1;
   &:hover {
-    box-shadow: 0px 0px 3px black;
-  }
-  &:focus {
-    outline: 0;
+    color: #667ecc;
+    background: white;
+    border: 1px solid #667ecc;
   }
 `
 const Flex = styled.div`
@@ -53,19 +73,23 @@ const Flex = styled.div`
     width: 600px;
   } */
 `
-const StyledInput = styled(Input)`
-  border-radius: 15px;
+const Clear = styled.button`
+  font-family: apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 7rem;
+  height: 3.5rem;
+  background: tomato;
   color: white;
-  background-color: tomato;
-  padding: 1em;
-  text-align: center;
-  margin: 20px;
-  flex: 1;
   &:hover {
-    box-shadow: 0px 0px 3px black;
-  }
-  &:focus {
-    outline: 0;
+    color: tomato;
+    background: white;
+    border: 1px solid tomato;
   }
 `
 const P = styled.h3`
@@ -76,9 +100,16 @@ const contact = () => {
   return (
     <MainLayout>
       <SEO title="Contact" />
-      <P>Have questions?  Interested in working together?  Feel free to reach out!</P>
+      <P>
+        Have questions? Interested in working together? Feel free to reach out!
+      </P>
       <div>
-        <Form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <Form
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
+        >
           <input type="hidden" name="bot-field" />
           <label>
             Name
@@ -101,8 +132,8 @@ const contact = () => {
             <TextArea name="message" id="message" rows="5" />
           </label>
           <Flex>
-            <Button type="submit">Send</Button>
-            <StyledInput type="reset" value="Clear" />
+            <Submit type="submit">Send</Submit>
+            <Clear type="reset">Clear</Clear>
           </Flex>
         </Form>
       </div>

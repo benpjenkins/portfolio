@@ -1,25 +1,25 @@
 import React from "react"
 import Layout from "../components/layout"
-import styled from 'styled-components'
-import SEO from '../components/seo'
-import Ben from '../images/ben.jpeg'
+import styled from "styled-components"
+import SEO from "../components/seo"
+import Ben from "../images/ben.jpeg"
 
 const Background = styled.div`
   background: #667ecc;
   width: 100vw;
-  height: 100%;
+  height: 90vh;
   text-align: center;
   @media (min-width: 800px) {
-    display:flex
+    display: flex;
   }
 `
 const Text = styled.h1`
   color: white;
   font-size: 4em;
   padding: 1em;
-  font-family: 'Oswald', serif;
+  font-family: "Oswald", serif;
   flex: 2;
-   @media (max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 2.5em;
   }
   @media (min-width: 800px) {
@@ -46,22 +46,20 @@ const ProfilePic = styled.img`
     margin-left: 5%;
     align-self: center;
     flex: 1 1 auto;
-    margin-top: 0%
+    margin-top: 0%;
   }
 `
-
 
 export default ({ data }) => {
   return (
     <div>
-    <SEO title="Home"/>
-    <Layout>
-      <Background>
-        <ProfilePic src={Ben} alt="Ben's headshot"></ProfilePic>
-        <Text>Ben Jenkins is a software engineer from Chicago, IL</Text>
-      </Background>
-    </Layout>
+      <SEO title="Home" />
+      <Layout>
+        <Background>
+          <ProfilePic src={Ben} alt="Ben's headshot"></ProfilePic>
+          <Text>Ben Jenkins is a software engineer from Chicago, IL</Text>
+        </Background>
+      </Layout>
     </div>
   )
 }
-

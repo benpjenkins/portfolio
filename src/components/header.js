@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
       paddingRight: "1.3rem",
       paddingLeft: "1.3rem",
       marginBottom: `1.45rem`,
-      width: `100%`,
+      width: `100vw`,
       fontFamily: "Oswald",
     }}
   >
