@@ -106,11 +106,13 @@ const contact = () => {
       <div>
         <Form
           method="post"
-          netlify-honeypot="bot-field"
+          data-netlify-honeypot="bot-field"
           data-netlify="true"
           name="contact"
+          action="/success"
         >
           <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <label>
             Name
             <br />
