@@ -27,21 +27,6 @@ const TextArea = styled.textarea`
     width: 600px;
   }
 `
-// const Button = styled.button`
-//   border-radius: 15px;
-//   color: white;
-//   background-color: #667ecc;
-//   padding: 1em;
-//   text-align: center;
-//   margin: 20px;
-//   flex: 1;
-//   &:hover {
-//     box-shadow: 0px 0px 3px black;
-//   }
-//   &:focus {
-//     outline: 0;
-//   }
-// `
 
 const Submit = styled.button`
   font-family: apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica,
