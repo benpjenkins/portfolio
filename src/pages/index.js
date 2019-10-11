@@ -23,7 +23,7 @@ const Text = styled.h1`
     font-size: 2.5em;
   }
   @media (min-width: 800px) {
-    margin-top: 7%;
+    margin-top: 9%;
   }
   @media (max-width: 430px) {
     font-size: 2em;
@@ -50,7 +50,7 @@ const ProfilePic = styled.img`
   }
 `
 
-export default ({ data }) => {
+const Home = () => {
   return (
     <div>
       <SEO title="Home" />
@@ -63,3 +63,5 @@ export default ({ data }) => {
     </div>
   )
 }
+
+export default Home
