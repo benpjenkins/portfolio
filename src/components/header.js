@@ -21,6 +21,7 @@ const StyledLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  font-size: 1.25rem;
 `
 const Header = ({ siteTitle }) => (
   <header
@@ -30,6 +31,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
       width: `100vw`,
       fontFamily: "Oswald",
+      fontWeight: "lighter",
     }}
   >
     <Flex>
@@ -40,18 +42,20 @@ const Header = ({ siteTitle }) => (
           padding: `1.45rem 1.0875rem`,
         }}
       >
-        <h1 style={{ margin: 0 }}>
+        <p style={{ margin: 0 }}>
           <Link
             to="/"
             style={{
               color: `black`,
               textDecoration: `none`,
               fontFamily: "Oswald",
+              fontWeight: "lighter",
+              fontSize: "2.7rem",
             }}
           >
             {siteTitle}
           </Link>
-        </h1>
+        </p>
       </div>
       <Links>
         <StyledLink to="about">About</StyledLink>
