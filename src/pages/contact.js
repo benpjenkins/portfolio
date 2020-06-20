@@ -1,5 +1,5 @@
 import React from "react"
-import MainLayout from "../components/mainLayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
@@ -83,7 +83,7 @@ const P = styled.h3`
 
 const contact = () => {
   return (
-    <MainLayout>
+    <Layout>
       <SEO title="Contact" />
       <P>
         Have questions? Interested in working together? Feel free to reach out!
@@ -124,7 +124,7 @@ const contact = () => {
           </Flex>
         </Form>
       </div>
-    </MainLayout>
+    </Layout>
   )
 }
 

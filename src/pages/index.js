@@ -1,67 +1,68 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 import SEO from "../components/seo"
-import Ben from "../images/ben.jpeg"
 
-const Background = styled.div`
-  background: #667ecc;
-  width: 100vw;
-  height: 90vh;
-  text-align: center;
-  @media (min-width: 800px) {
-    display: flex;
-  }
-`
-const Text = styled.h1`
-  color: white;
-  font-size: 4em;
-  padding: 1em;
-  font-family: "Oswald", serif;
-  flex: 2;
-  @media (max-width: 800px) {
-    font-size: 2.5em;
-  }
-  @media (min-width: 800px) {
-    margin-top: 9%;
-  }
-  @media (max-width: 430px) {
-    font-size: 2em;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 `
 
-const ProfilePic = styled.img`
-  border-radius: 50%;
-  width: 40%;
-  height: auto;
-  padding-top: 20px;
-  flex: 1;
-
-  @media (max-width: 430px) {
-    width: 35%;
-  }
-  @media (min-width: 800px) {
-    width: 1%;
-    height: auto;
-    margin-left: 5%;
-    align-self: center;
-    flex: 1 1 auto;
-    margin-top: 0%;
-  }
+const Container = styled.div`
+  /* margin-top: 6em; */
+  margin-right: 2em;
 `
 
-const Home = () => {
+const Date = styled.span`
+  color: #4d4a46;
+`
+
+const Home = ({ data }) => {
   return (
     <div>
       <SEO title="Home" />
       <Layout>
-        <Background>
-          <ProfilePic src={Ben} alt="Ben's headshot"></ProfilePic>
-          <Text>Ben Jenkins is a software engineer from Chicago, IL</Text>
-        </Background>
+        <Container>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <Date>{node.frontmatter.date}</Date>
+              <h2>{node.frontmatter.title}</h2>
+              <p>{node.frontmatter.description}</p>
+              <StyledLink to={node.fields.slug}>Read</StyledLink>
+              <br />
+              <br />
+              <br />
+            </div>
+          ))}
+        </Container>
       </Layout>
     </div>
   )
 }
 
 export default Home
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+            description
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

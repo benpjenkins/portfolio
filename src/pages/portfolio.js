@@ -3,11 +3,11 @@ import React from "react"
 import reactfx from "../images/reactfx.png"
 import stroll from "../images/stroll.png"
 import gracefulShoveler from "../images/gracefulShoveler.png"
-import MainLayout from "../components/mainLayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Portfolio = () => (
-  <MainLayout>
+  <Layout>
     <SEO title="Portfolio" />
 
     <h2>Stroll - Developer </h2>
@@ -72,7 +72,7 @@ const Portfolio = () => (
     <br></br>
     <br></br>
     <br></br>
-  </MainLayout>
+  </Layout>
 )
 
 export default Portfolio

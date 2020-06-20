@@ -1,9 +1,9 @@
 import React from "react"
-import MainLayout from "../components/mainLayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const About = () => (
-  <MainLayout>
+  <Layout>
     <SEO title="About" />
     <h1>About Me</h1>
     <p>
@@ -25,11 +25,12 @@ const About = () => (
       further enrich their lives.
     </p>
     <p>
-      During the summer of 2019 I studied fullstack software engineering at Fullstack
-      Academy in Chicago. Upon completing my studies I was chosen for their teaching fellowship, a competitive position where graduates spend another 13 weeks at Fullstack Academy teaching and mentoring students.
-
-      When I complete the teaching fellowship in December I will
-      be seeking employment in the area as a Software Engineer. I am open to any
+      During the summer of 2019 I studied fullstack software engineering at
+      Fullstack Academy in Chicago. Upon completing my studies I was chosen for
+      their teaching fellowship, a competitive position where graduates spend
+      another 13 weeks at Fullstack Academy teaching and mentoring students.
+      When I complete the teaching fellowship in December I will be seeking
+      employment in the area as a Software Engineer. I am open to any
       opportunities but would be particularly excited to be part of a team
       focused on social good.
     </p>
@@ -39,7 +40,7 @@ const About = () => (
       <a href={"mailto: ben@benjenkins.dev"}>Email</a> or follow me on{" "}
       <a href={"https://twitter.com/benjenkinsdev"}>Twitter</a>.
     </p>
-  </MainLayout>
+  </Layout>
 )
 
 export default About
