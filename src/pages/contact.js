@@ -79,6 +79,7 @@ const Clear = styled.button`
 `
 const P = styled.h3`
   text-align: center;
+  font-family: Avenir;
 `
 
 const contact = () => {

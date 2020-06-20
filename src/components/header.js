@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 import Ben from "../images/ben.jpeg"
 
 const Fixed = styled.div`
@@ -28,6 +29,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    text-decoration-color: #78acff;
   }
 `
 
@@ -35,6 +37,16 @@ const ProfilePic = styled.img`
   width: 88px;
   height: auto;
   border-radius: 50%;
+`
+
+const Icons = styled.div`
+  margin-top: 2em;
+`
+
+const A = styled.a`
+  text-decoration: none;
+  color: #78acff;
+  padding: 0.5em;
 `
 const Header = ({ siteTitle }) => (
   <Fixed>
@@ -44,7 +56,7 @@ const Header = ({ siteTitle }) => (
         paddingLeft: "1.3rem",
         marginBottom: `1.45rem`,
         width: `100%`,
-        fontFamily: "Oswald",
+        fontFamily: "Avenir",
       }}
     >
       <Flex>
@@ -63,8 +75,19 @@ const Header = ({ siteTitle }) => (
           <StyledLink to="/">Blog</StyledLink>
           <StyledLink to="portfolio">Portfolio</StyledLink>
           <StyledLink to="about">About</StyledLink>
-          <StyledLink to="contact">Contact</StyledLink>
+          {/* <StyledLink to="contact">Contact</StyledLink> */}
         </Links>
+        <Icons>
+          <A href="https://github.com/benpjenkins">
+            <FaGithub size="2em" />
+          </A>
+          <A href="https://www.linkedin.com/in/benpjenkins/">
+            <FaLinkedin size="2em" />
+          </A>
+          <A href="https://twitter.com/benjenkinsdev">
+            <FaTwitter size="2em" />
+          </A>
+        </Icons>
       </Flex>
     </header>
   </Fixed>

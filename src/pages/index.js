@@ -6,9 +6,15 @@ import SEO from "../components/seo"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  font-family: Avenir;
   &:hover {
     text-decoration: underline;
   }
+`
+
+const H2 = styled.h2`
+  font-family: Avenir;
+  font-weight: bolder;
 `
 
 const Container = styled.div`
@@ -18,6 +24,12 @@ const Container = styled.div`
 
 const Date = styled.span`
   color: #4d4a46;
+  font-family: Avenir;
+  font-weight: bolder;
+`
+
+const P = styled.p`
+  font-family: Avenir;
 `
 
 const Home = ({ data }) => {
@@ -29,8 +41,8 @@ const Home = ({ data }) => {
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
               <Date>{node.frontmatter.date}</Date>
-              <h2>{node.frontmatter.title}</h2>
-              <p>{node.frontmatter.description}</p>
+              <H2>{node.frontmatter.title}</H2>
+              <P>{node.frontmatter.description}</P>
               <StyledLink to={node.fields.slug}>Read</StyledLink>
               <br />
               <br />
