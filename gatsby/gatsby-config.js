@@ -20,6 +20,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/styles/typography`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
   ]
 }
