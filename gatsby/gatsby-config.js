@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
     title: `Ben Jenkins`,
@@ -5,6 +9,14 @@ module.exports = {
     author: `Ben Jenkins`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        head: false,
+        anonymize: true
+      }
+    },
     {
       resolve: `gatsby-plugin-styled-components`,
     },

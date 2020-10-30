@@ -6,7 +6,9 @@
   "author": "Ben Jenkins",
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.91",
+    "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-styled-components": "^3.3.14",
     "prop-types": "^15.7.2",
