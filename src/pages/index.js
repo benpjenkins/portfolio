@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 const Container = styled.div`
   background-color: #4287f5;
@@ -20,15 +20,24 @@ const A = styled.a`
   font-family: "roboto";
 `
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0px;
+  }
+`
+
 const Home = ({ data }) => {
   return (
-    <Container>
-      <P>
-        This site is currently being redesigned. If you would like to contact me
-        in the meantime reach out to{" "}
-        <A href="ben@benjenkins.dev"> ben@benjenkins.dev</A>
-      </P>
-    </Container>
+    <>
+      <GlobalStyle />
+      <Container>
+        <P>
+          This site is currently being redesigned. If you would like to contact
+          me in the meantime reach out to{" "}
+          <A href="ben@benjenkins.dev"> ben@benjenkins.dev</A>
+        </P>
+      </Container>
+    </>
   )
 }
 
