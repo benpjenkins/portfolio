@@ -33,8 +33,8 @@ const Home = ({ data }) => {
       <Container>
         <P>
           This site is currently being redesigned. If you would like to contact
-          me in the meantime reach out to{" "}
-          <A href="ben@benjenkins.dev"> ben@benjenkins.dev</A>
+          me in the meantime reach out to my{" "}
+          <A href="mailto:ben@benjenkins.dev">email</A>.
         </P>
       </Container>
     </>
