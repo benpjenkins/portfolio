@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import styled, { createGlobalStyle } from "styled-components"
 
 const Container = styled.div`
@@ -20,6 +21,13 @@ const A = styled.a`
   font-family: "roboto";
 `
 
+const H1 = styled.h1`
+  padding: 5%;
+  color: white;
+  font-family: "roboto";
+  font-size: 3rem;
+`
+
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
@@ -29,13 +37,23 @@ const GlobalStyle = createGlobalStyle`
 const Home = ({ data }) => {
   return (
     <>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
+        <title>Ben Jenkins</title>
+      </Helmet>
       <GlobalStyle />
       <Container>
-        <P>
-          This site is currently being redesigned. If you would like to contact
-          me in the meantime reach out to my{" "}
-          <A href="mailto:ben@benjenkins.dev">email</A>.
-        </P>
+        <main>
+          <H1>Ben Jenkins</H1>
+          <P>
+            This site is currently being redesigned. If you would like to
+            contact me in the meantime reach out to my{" "}
+            <A href="mailto:ben@benjenkins.dev">email</A>.
+          </P>
+        </main>
       </Container>
     </>
   )

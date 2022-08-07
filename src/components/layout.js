@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
   return (
     <Flex>
       <MaxWidth>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle="Ben Jenkins" />
       </MaxWidth>
       <main>
         <Padding>{children}</Padding>
